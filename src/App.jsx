@@ -7,7 +7,7 @@ import Funcionamento from './pages/Funcionamento.jsx'
 import Integrantes from './pages/Integrantes.jsx'
 import Bibliografia from './pages/Bibliografia.jsx'
 import Materiais from './pages/Materiais.jsx'
-
+import { createBrowseRouter, RouterProvider } from "react-router-dom"
 
 
 
@@ -19,14 +19,7 @@ function App() {
     <>
     <body className='bg-offwhite'>
       
-    
-    <Header />
-    <Home/>
-    <Funcionamento/>
-    <Materiais />
-    <Bibliografia />
-    <Integrantes />
-    
+     <RouterProvider router = {router} />
 
     </body>
     </>
@@ -34,3 +27,31 @@ function App() {
 }
 
 export default App
+
+ 
+const router = createBrowseRouter([
+ {
+  path: "/",
+  element: <Home />
+ },
+
+ {
+  path: "/integrantes",
+  element: <Integrantes />
+ },
+
+ {
+  path: "/materiais",
+  element: <Materiais />
+ },
+
+ {
+  path: "/funcionamento",
+  element: <Funcionamento />
+ },
+
+ {
+  path: "/bibliografia",
+  element: <Bibliografia />
+ },
+])
