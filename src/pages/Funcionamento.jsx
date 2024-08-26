@@ -1,8 +1,11 @@
 import React from 'react' 
 import Arduino from '../public/arduino.png'
+import Header from './Header'
 
 function Funcionamento() {
   return (
+    <>
+      <Header />
     <div id="funcionamento">
       <br /><br />
        
@@ -22,6 +25,7 @@ function Funcionamento() {
         </section>
         
     </div>
+    </>
   )
 }
 

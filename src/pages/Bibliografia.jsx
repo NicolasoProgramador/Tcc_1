@@ -1,8 +1,11 @@
 import React from "react"
 import sensorchuva from '../public/sensor_chuva.png'
+import Header from './Header'
 
 function Bibliografia() {
   return (
+    <>
+      <Header />
     <div id="bibliografia" className='px-4 py-5'>
       <h2 className="font-kulim text-orange text-3xl md:text-5xl font-bold text-center">
         Referências Bibliográficas
@@ -26,6 +29,7 @@ function Bibliografia() {
         <img src={sensorchuva} className='mt-6 w-48 md:w-96' alt="Sensor de chuva" />
       </section>
     </div>
+    </>
   )
 }
 

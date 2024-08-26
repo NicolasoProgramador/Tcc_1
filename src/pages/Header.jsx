@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import iconeJanela from '../public/iconeJanela.png';
 
 const Navbar = () => {
@@ -14,11 +15,11 @@ const Navbar = () => {
         <img src={iconeJanela} alt="Ícone Janela" className="h-8 md:h-12" />
         
         <div className="hidden md:flex space-x-6">
-          <a href="#inicio" className="text-space-blue hover:text-dark-bluu">Início</a>
-          <a href="#funcionamento" className="text-space-blue hover:text-dark-bluu">Funcionamento</a>
-          <a href="#materias" className="text-space-blue hover:text-dark-bluu">Materiais</a>
-          <a href="#bibliografia" className="text-space-blue hover:text-dark-bluu">Referências</a>
-          <a href="#integrantes" className="text-space-blue hover:text-dark-bluu">Integrantes</a>
+          <Link to={"/"} className="text-space-blue hover:text-dark-bluu">Início</Link>
+          <Link to={"/funcionamento"} className="text-space-blue hover:text-dark-bluu">Funcionamento</Link>
+          <Link to={"/materiais"} className="text-space-blue hover:text-dark-bluu">Materiais</Link>
+          <Link to={"/bibliografias"} className="text-space-blue hover:text-dark-bluu">Referências</Link>
+          <Link to={"/integrantes"} className="text-space-blue hover:text-dark-bluu">Integrantes</Link>
         </div>
 
         <div className="md:hidden">
@@ -32,11 +33,11 @@ const Navbar = () => {
 
       {isOpen && (
         <div className="md:hidden flex flex-col mt-2 space-y-2">
-          <a href="#inicio" className="text-space-blue hover:text-dark-bluu py-2 border-t border-gray-300">Início</a>
-          <a href="#funcionamento" className="text-space-blue hover:text-dark-bluu py-2 border-t border-gray-300">Funcionamento</a>
-          <a href="#materias" className="text-space-blue hover:text-dark-bluu py-2 border-t border-gray-300">Materiais</a>
-          <a href="#bibliografia" className="text-space-blue hover:text-dark-bluu py-2 border-t border-gray-300">Referências</a>
-          <a href="#integrantes" className="text-space-blue hover:text-dark-bluu py-2 border-t border-gray-300">Integrantes</a>
+          <Link to ="/" className = "text-space-blue hover:text-dark-bluu py-2 border-t border-gray-300">Início</Link>
+          <Link to ="/funcionamento" className="text-space-blue hover:text-dark-bluu py-2 border-t border-gray-300">Funcionamento</Link>
+          <Link to = "/materiais" className="text-space-blue hover:text-dark-bluu py-2 border-t border-gray-300">Materiais</Link>
+          <Link to = "/bibliografias" className="text-space-blue hover:text-dark-bluu py-2 border-t border-gray-300">Referências</Link>
+          <Link to = "/integrantes" className="text-space-blue hover:text-dark-bluu py-2 border-t border-gray-300">Integrantes</Link>
         </div>
       )}
     </nav>

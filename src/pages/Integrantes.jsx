@@ -2,10 +2,13 @@ import React from "react"
 import nicolasfoto from '../public/nicolas_foto.png'
 import joaofoto from '../public/joao_foto.png'
 import allana_foto from '../public/allana_foto.png'
+import Header from './Header'
 
 function Integrantes() {
   return (
-    <div id="integrantes" className="px-4 py-5">
+    <>
+      <Header />
+        <div id="integrantes" className="px-4 py-5">
         <h1 className="font-kulim text-orange text-4xl md:text-6xl font-bold text-center">
           Integrantes
         </h1>
@@ -33,6 +36,7 @@ function Integrantes() {
           </section>
         </section>
     </div>
+    </>
   )
 }
 

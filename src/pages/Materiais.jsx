@@ -1,9 +1,12 @@
 import React from "react"
 import Arduino from '../public/arduino.png'
 import Chuva from '../public/sensor_chuva.png'
+import Header from './Header'
 
 function Materiais() {
   return (
+    <>
+      <Header />
     <div id="materias" className='px-4 py-5'> {/* Adicionei padding para mobile */}
         <h1 className="font-kulim text-orange text-4xl md:text-6xl font-bold text-center">
           Materiais
@@ -69,6 +72,7 @@ function Materiais() {
             </div>
         </section>
     </div>
+    </>
   )
 }
 
