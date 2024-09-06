@@ -32,7 +32,7 @@ const router = createBrowserRouter([
   },
  
   {
-   path: "/bibliografia",
+   path: "/bibliografias",
    element: <Bibliografia />
   },
  ])

@@ -8,6 +8,10 @@ function Materiais() {
     <>
       <Header />
     <div id="materias" className='px-4 py-5'> {/* Adicionei padding para mobile */}
+        <br />
+        <br />
+        <br />
+        <br />
         <h1 className="font-kulim text-orange text-4xl md:text-6xl font-bold text-center">
           Materiais
         </h1>

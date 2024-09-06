@@ -8,10 +8,18 @@ function Integrantes() {
   return (
     <>
       <Header />
-        <div id="integrantes" className="px-4 py-5">
+        <div id="integrantes" className="px-4 py-10">
+          <br />
+          <br />
+          <br />
         <h1 className="font-kulim text-orange text-4xl md:text-6xl font-bold text-center">
           Integrantes
         </h1>
+        
+        
+        
+        <br />
+        
 
         <section className="flex flex-col md:flex-row justify-center mt-5 space-y-6 md:space-y-0 md:space-x-10">
           <section className="flex flex-col items-center">
@@ -35,7 +43,7 @@ function Integrantes() {
               </p>
           </section>
         </section>
-    </div>
+        </div>
     </>
   )
 }

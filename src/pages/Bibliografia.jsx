@@ -7,6 +7,10 @@ function Bibliografia() {
     <>
       <Header />
     <div id="bibliografia" className='px-4 py-5'>
+      <br />
+      <br />
+      <br />
+      <br />
       <h2 className="font-kulim text-orange text-3xl md:text-5xl font-bold text-center">
         Referências Bibliográficas
       </h2>
