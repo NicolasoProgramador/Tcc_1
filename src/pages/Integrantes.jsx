@@ -41,6 +41,18 @@ function Integrantes() {
               <p className="font-kulim text-xl md:text-2xl font-bold mt-2">
                 Allana Freitas
               </p>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br /><br /><br /><br />
+              <br />
+              <br />
           </section>
         </section>
         </div>

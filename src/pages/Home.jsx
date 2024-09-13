@@ -37,7 +37,7 @@ export default function Home() {
             Nossa Smart Window (Janela Inteligente) oferece a segurança que a sua residência precisa!
           </p>
           <p className='font-kulim font-bold text-lg md:text-2xl text-center mt-4'>
-            Oferecemos segurança e tecnologia à sua casa, <br />  para proteger de fortes chuvas, umidade, <br /> fumaça e também substâncias tóxicas pelo ar, <br />  simplesmente usando o sistema Arduino, onde <br /> o projeto irá identificar umidade ao redor e <br />  fumaça para automaticamente fechar a janela.
+            Oferecemos segurança e tecnologia à sua casa,para proteger de fortes chuvas, umidade, fumaça e também substâncias tóxicas pelo ar, simplesmente usando o sistema Arduino, onde o projeto irá identificar umidade ao redor e fumaça para automaticamente fechar a janela.
           </p>
           <img src={Pebble} className='mt-6 w-64 md:w-96' alt="" />
         </section>
