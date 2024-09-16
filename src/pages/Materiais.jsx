@@ -2,6 +2,7 @@ import React from "react"
 import Arduino from '../public/arduino.png'
 import Chuva from '../public/sensor_chuva.png'
 import Header from './Header'
+import SensorMQ2 from '../public/SensorMQ2man.png'
 
 function Materiais() {
   return (
@@ -75,6 +76,23 @@ function Materiais() {
                 <img src={Chuva} alt="" className="mt-6 w-64 md:w-96"/>
             </div>
         </section>
+ 
+      <section className="mt-10">
+       <div className='flex flex-col items-center'>
+       <h2 className='font-kulim text-dark-blue text-3xl md:text-4xl font-bold text-center'>Sensor MQ2</h2>
+       <p className="font-kulim font-bold text-base md:text-2xl text-center mt-4">No projeto Smart Window, o sensor de gás MQ-2 detecta fumaça ou gases perigosos dentro de casa. Se ele identificar níveis críticos de fumaça ou gases, pode acionar um alerta, como ativar um alarme sonoro (buzzer), ajudando a prevenir riscos à saúde ou evitar odores indesejados no ambiente.</p>
+       <img src={SensorMQ2} alt="" className="mt-6 w-64 md:w-96"/>
+      
+      
+      
+      
+
+
+
+
+       </div>
+      </section>
+      
     </div>
     </>
   )
