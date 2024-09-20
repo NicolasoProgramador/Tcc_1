@@ -3,6 +3,8 @@ import Arduino from '../public/arduino.png'
 import Chuva from '../public/sensor_chuva.png'
 import Header from './Header'
 import SensorMQ2 from '../public/SensorMQ2man.png'
+import LCDarduino from '../public/LCDarduino.png'
+import DHT11 from '../public/DHT11.png'
 
 function Materiais() {
   return (
@@ -82,15 +84,26 @@ function Materiais() {
        <h2 className='font-kulim text-dark-blue text-3xl md:text-4xl font-bold text-center'>Sensor MQ2</h2>
        <p className="font-kulim font-bold text-base md:text-2xl text-center mt-4">No projeto Smart Window, o sensor de gás MQ-2 detecta fumaça ou gases perigosos dentro de casa. Se ele identificar níveis críticos de fumaça ou gases, pode acionar um alerta, como ativar um alarme sonoro (buzzer), ajudando a prevenir riscos à saúde ou evitar odores indesejados no ambiente.</p>
        <img src={SensorMQ2} alt="" className="mt-6 w-64 md:w-96"/>
-      
-      
-      
-      
-
-
-
-
        </div>
+      </section>
+
+      <section className="mt-10">
+      <div className='flex flex-col items-center'> 
+      <h2 className='font-kulim text-dark-blue text-3xl md:text-4xl font-bold text-center'>LCD</h2>
+      <p className="font-kulim font-bold text-base md:text-2xl text-center mt-4"> No projeto Smart Window, o display LCD exibe informações sobre o status da janela e o clima. Ele mostra mensagens como "Está chovendo" e "Fechando Janela" ao detectar chuva, ou "Tempo seco" e "Abrindo Janela" quando o sensor de chuva está seco. Isso fornece feedback visual em tempo real sobre as ações automáticas do sistema, permitindo que o usuário saiba o que está acontecendo com a janela.</p>
+      <img src={LCDarduino}  width = {300}alt="" />
+      
+      </div>  
+      </section>
+
+      <section className="mt-10">
+      <div className='flex flex-col items-center'> 
+      <h2 className='font-kulim text-dark-blue text-3xl md:text-4xl font-bold text-center'>DHT11 - Sensor De Temperatura e Humidade</h2>
+      <p className="font-kulim font-bold text-base md:text-2xl text-center mt-4">  O sensor DHT11 no projeto Smart Window mede temperatura e umidade, mas não será utilizado para abrir a janela com base na temperatura elevada. Ele pode ser usado apenas para monitoramento das condições internas.
+      </p>
+      <img src={DHT11}  width = {300}alt="" />
+      
+      </div>  
       </section>
       
     </div>
